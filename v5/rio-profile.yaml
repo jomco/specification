@@ -1,0 +1,60 @@
+requests:
+  - method: GET
+    path: /
+    parameters:
+  - method: GET
+    path: /education-specifications
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /education-specifications/{educationSpecificationId}
+    parameters:
+      - parameter: returnTimelineOverrides
+        value: true
+  - method: GET
+    path: /education-specifications/{educationSpecificationId}/education-specifications
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /education-specifications/{educationSpecificationId}/programs
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /education-specifications/{educationSpecificationId}/courses
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /programs
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /programs/{programId}
+    parameters:
+      - parameter: returnTimelineOverrides
+        value: true
+  - method: GET
+    path: /programs/{programId}/offerings
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /courses
+    parameters:
+      - parameter: consumer
+        value: rio
+  - method: GET
+    path: /courses/{courseId}
+    parameters:
+      - parameter: returnTimelineOverrides
+        value: true
+  - method: GET
+    path: /courses/{courseId}/offerings
+    parameters:
+      - parameter: consumer
+        value: rio
+
