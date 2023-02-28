@@ -3,14 +3,6 @@ description: |
   The specification of an education object. This specification allows for other education objects to be derived from it.
   It is used to aggregate education objects from a supplying institution.
   It clusters programs to a main educationSpecification that is used in registries such as RIO. 
-required:
-  - primaryCode
-  - educationSpecificationType
-  - name
-  - validFrom # this property is determined in another file, will this extra requirement work?
-  - formalDocument
-  - level # this is a hard one: level and sector are only required if `educationSpecificationType=program`.
-  - sector # this is a hard one: level and sector are only required if `educationSpecificationType=program`.
 properties:
   primaryCode:
     description: |

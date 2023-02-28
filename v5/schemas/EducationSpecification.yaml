@@ -10,3 +10,14 @@ allOf:
         description: The day this EducationSpecification ceases to be valid (e.g. exclusive).
         type: string
         format: date
+  - anyOf:
+      - $ref: '../schemas/EducationSpecificationRequired.yaml'
+      - $ref: '../schemas/EducationSpecificationRequiredForProgram.yaml'
+discriminator:
+  propertyName: 'educationSpecificationType'
+  mapping:
+    course: '../schemas/EducationSpecificationRequired.yaml'
+    cluster: '../schemas/EducationSpecificationRequired.yaml'
+    privateProgram: '../schemas/EducationSpecificationRequired.yaml'
+    program: '../schemas/EducationSpecificationRequiredForProgram.yaml'
+    

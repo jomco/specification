@@ -1,0 +1,9 @@
+required:
+  - primaryCode
+  - educationSpecificationType
+  - name
+  - validFrom
+  - formalDocument
+  - level # this is a hard one: level and sector are only required if `educationSpecificationType=program`.
+  - sector # this is a hard one: level and sector are only required if `educationSpecificationType=program`.
+  
